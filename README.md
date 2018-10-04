@@ -22,7 +22,13 @@ Components:
 5) Breadboard
 
 API's used:
-MailGun Email API
-Bolt Cloud API
+MailGun Email API, 
+Bolt Cloud API, 
 Pyhon Library
+
+
+
+
+
+
 
