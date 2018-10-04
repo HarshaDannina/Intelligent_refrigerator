@@ -2,10 +2,16 @@
 
                                                           Assignment 
                                                     Capstone Final Project
-                                                    
-                                                    
-This is the capstone project to summarize all the learnings in the 3 modules of the course and to give you practical hands-on experience by working on a major project. 
 
+This is the capstone project to summarize all the learnings in the 3 modules of the course and to give you practical hands-on experience by working on a major project using Bolt IOT module. 
+
+
+
+
+
+
+
+![Bolt LOGO](https://github.com/HarshaManoj/BoltIoT-refrigerator/blob/master/Bolt.jpg)
 
 Problem Statement:
 In the capstone project for the IoT training, we require you to build a proof of concept of the lighting system of a refrigerator which uses data from the Light Dependent Resistor (LDR) and a push button as well as features of the Bolt IoT cloud. You need to use the light intensity and button state to collect light intensity and button data to decide the state of the fridge:
@@ -27,8 +33,11 @@ Bolt Cloud API,
 Pyhon Library
 
 
+![Image](https://github.com/HarshaManoj/BoltIoT-refrigerator/blob/master/20181004_161940.jpg)
 
 
+It sends Emails when the state of the Door changes
 
+![Image](https://github.com/HarshaManoj/BoltIoT-refrigerator/blob/master/Email%20output.png)
 
 
