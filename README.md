@@ -32,6 +32,9 @@ MailGun Email API,
 Bolt Cloud API, 
 Pyhon Library
 
+![Cover pic](https://github.com/HarshaManoj/IoT-refrigerator/blob/master/cover.jpg)
+
+
 
 ![Image](https://github.com/HarshaManoj/BoltIoT-refrigerator/blob/master/20181004_161940.jpg)
 
