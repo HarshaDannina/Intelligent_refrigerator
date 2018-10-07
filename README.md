@@ -35,10 +35,10 @@ Pyhon Library
 ![Cover pic](https://github.com/HarshaManoj/IoT-refrigerator/blob/master/cover.jpg)
 
 
-It make decissions itself by most powerful Machine Learning algorithm,
+It make decissions itself by most powerful Machine Learning algorithm[decisionTrees],
 And connected to internet to infrom you about the refrigerator status.
 
-
+![Image](https://github.com/HarshaManoj/Intelligent_refrigerator/blob/master/sklearn.png)
 
 ![Image](https://github.com/HarshaManoj/BoltIoT-refrigerator/blob/master/20181004_161940.jpg)
 
