@@ -43,9 +43,16 @@ And connected to internet to infrom you about the refrigerator status.
 ![Image](https://github.com/HarshaManoj/BoltIoT-refrigerator/blob/master/20181004_161940.jpg)
 
 
+
+Here is the shematics
+
+![Image](https://github.com/HarshaManoj/Intelligent_refrigerator/blob/master/Final_circuit.png)
+
+
 It sends Emails when the state of the Door changes
 
 ![Image](https://github.com/HarshaManoj/BoltIoT-refrigerator/blob/master/Email%20output.png)
+
 
 
 
