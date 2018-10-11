@@ -35,8 +35,9 @@ Pyhon Library
 ![Cover pic](https://github.com/HarshaManoj/IoT-refrigerator/blob/master/cover.jpg)
 
 
-It make decissions itself by most powerful Machine Learning algorithm[decisionTrees],
-And connected to internet to infrom you about the refrigerator status.
+Anomaly Detection: Using Machine Learning
+
+For the Anomaly detection, I prepared a dataset sensorvalues.csv where I saved LDR sensor readings and door states according to problem description. I used Decision trees algorithm for prediction of door state depends on real-time LDR values. I've been using Scikit Learn library for couple of years for most Machine Learning algorithms and it was doing great. So I decided to use sklearn in this project. Here is the code for machine learning prediction of refrigerator door state using Decision trees.
 
 ![Image](https://github.com/HarshaManoj/Intelligent_refrigerator/blob/master/sklearn.png)
 
