@@ -26,7 +26,7 @@ while N:
         if state == 0 and pb_value == 0:
             print("Door is half open")
             led_state = mybolt.analogWrite('0','75')
-            response = mailer.send_email("Alert","The Current door state is: HALF-OPEN")
+            
         if state == 1 and pb_value == 0:
             print("Door is open")
             led_state = mybolt.analogWrite('0','255')
