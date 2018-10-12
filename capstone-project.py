@@ -5,6 +5,7 @@ import dtree
 
 mybolt = Bolt(credentials.API_KEY, credentials.DEVICE_ID)
 mailer = Email(credentials.MAILGUN_API_KEY, credentials.SANDBOX_URL, credentials.SENDER_EMAIL, credentials.RECIPIENT_EMAIL)
+previous_state = 0
 N = True
 while N:
     ldr_response = mybolt.analogRead('A0')
@@ -18,19 +19,24 @@ while N:
     pb_value = int(pb_data['value'])
     
     state = dtree.MachineLearning_model(ldr_value)
-    try:
-        if pb_value == 1:
-            print("Door is Closed")
-            led_state = mybolt.analogWrite('0','0')
-            response = mailer.send_email("Alert","The Current door state is: CLOSE")
-        if state == 0 and pb_value == 0:
-            print("Door is half open")
-            led_state = mybolt.analogWrite('0','75')
-            
-        if state == 1 and pb_value == 0:
-            print("Door is open")
-            led_state = mybolt.analogWrite('0','255')
-            response = mailer.send_email("Alert","The Current door state is: OPEN")
-    except Exception as e:
-        print("Error",e)
+    if previous_state != present_state:
+            try:
+                if pb_value == 1:
+                    print("Door is Closed")
+                    led_state = mybolt.analogWrite('0','0')
+                    response = mailer.send_email("Alert","The Current door state is: CLOSE")
+                    
+                if present_state == 0 and pb_value == 0:
+                    print("Door is half open")
+                    led_state = mybolt.analogWrite('0','75')
+
+                if present_state == 1 and pb_value == 0:
+                    print("Door is open")
+                    led_state = mybolt.analogWrite('0','255')
+                    response = mailer.send_email("Alert","The Current door state is: OPEN")
+                    
+                previous_state = present_state
+                
+            except Exception as e:
+                print("Error",e)
     time.sleep(10)
